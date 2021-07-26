@@ -36,6 +36,7 @@ const createApi = async (rawUrl, extraId, data) => {
             description: category.description,
           },
         });
+
         const newSecId = newSec.section.id;
         for (const articleId of Object.keys(section.articles)) {
           const article = section.articles[articleId];
