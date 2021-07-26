@@ -49,6 +49,7 @@ const createApi = async (rawUrl, extraId, data) => {
               body: article.body,
               user_segment_id: article.user_segment_id,
               permission_group_id: article.permission_group_id,
+              promoted: article.promoted,
             },
           });
         }
