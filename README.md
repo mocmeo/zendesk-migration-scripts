@@ -21,11 +21,25 @@ Authorization: Basic xxxxToken
 - Create new category:
 
 ```
-curl https://domain.zendesk.com/api/v2/help_center/en-us/categories.json -u abc@gmail.com/token:{apiToken} -d '{"category": {"position": 2, "locale": "en-us", "name": "Test123", "description": "Test"}}' -X POST -H "Content-Type: application/json"
+curl https://domain.zendesk.com/api/v2/help_center/en-us/categories.json -u abc@gmail.com/token:xxxxToken -d '{"category": {"position": 2, "locale": "en-us", "name": "Test123", "description": "Test"}}' -X POST -H "Content-Type: application/json"
 ```
 
 - Delete category:
 
 ```
 curl https://domain.zendesk.com/api/v2/help_center/en-us/categories/4404807769114.json -H "Authorization: Basic xxxToken" -X DELETE
+```
+
+## How to run
+
+- Backup data:
+
+```
+node backup.js
+```
+
+- Import data:
+
+```
+node index.js
 ```
