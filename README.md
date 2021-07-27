@@ -1,4 +1,6 @@
-# Zendesk Migration Script
+# Zendesk Migration Scripts
+
+Simple script to backup and repopulate data to multiple zendesk brands. It helps import/export categories, sections, articles easily.
 
 Reference: https://developer.zendesk.com/api-reference/help_center/help-center-api/
 
@@ -12,18 +14,18 @@ Reference: https://developer.zendesk.com/api-reference/help_center/help-center-a
 Authorization: Basic xxxxToken
 ```
 
-- Note: As we enabled 2-factor authentication in user profile, we'll no longer be able to use username and password to authenticate API requests -> have to use API token.
+- Note: If we enabled 2-factor authentication in user profile, we'll no longer be able to use username and password to authenticate API requests -> have to use API token.
 
 ## Example requests
 
 - Create new category:
 
 ```
-curl https://ffsupportsg.zendesk.com/api/v2/help_center/en-us/categories.json -u irynav@garena.com/token:{apiToken} -d '{"category": {"position": 2, "locale": "en-us", "name": "Test123", "description": "Test"}}' -X POST -H "Content-Type: application/json"
+curl https://domain.zendesk.com/api/v2/help_center/en-us/categories.json -u abc@gmail.com/token:{apiToken} -d '{"category": {"position": 2, "locale": "en-us", "name": "Test123", "description": "Test"}}' -X POST -H "Content-Type: application/json"
 ```
 
 - Delete category:
 
 ```
-curl https://ffsupportsg.zendesk.com/api/v2/help_center/en-us/categories/4404807769114.json -H "Authorization: Basic xxxToken" -X DELETE
+curl https://domain.zendesk.com/api/v2/help_center/en-us/categories/4404807769114.json -H "Authorization: Basic xxxToken" -X DELETE
 ```

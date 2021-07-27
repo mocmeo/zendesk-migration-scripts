@@ -1,5 +1,5 @@
 module.exports = {
-  domainName: "ffsupporteu",
+  domainName: "domainName",
   apiPath: {
     category:
       "https://domainName.zendesk.com/api/v2/help_center/en-us/categories.json",
