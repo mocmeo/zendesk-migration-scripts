@@ -2,7 +2,7 @@
   "name": "zendesk-migration-scripts",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "gamesupport@garena.com",
+  "author": "vdev.lamnn@gmail.com",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",
